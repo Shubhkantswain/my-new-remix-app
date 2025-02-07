@@ -1,0 +1,12 @@
+# Top-level configuration
+compatibility_date = "2024-02-07"
+compatibility_flags = ["nodejs_compat"]
+
+[site]
+bucket = "./public"
+entry-point = "app/entry.server.tsx"
+
+# If you're using KV namespaces, keep this section
+[[kv_namespaces]]
+binding = "MY_NAMESPACE"
+id = "your-kv-id"
